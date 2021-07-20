@@ -1,8 +1,9 @@
 void main() {
   var myDeck = Deck();
   myDeck.shuffle();
-  print(myDeck.toString());
-  print(myDeck.cardWithSuit('Spades'));
+  print(myDeck);
+  print(myDeck.deal(5));
+  print(myDeck);
 }
 
 class Deck {
@@ -45,7 +46,17 @@ class Deck {
   }
 
   List cardWithSuit(String suit) {
-    return cards.where((element)=>element.suit == suit).toList();
+    return cards.where((element) => element.suit == suit).toList();
+  }
+
+  List deal(int nbCards) {
+    var hand = cards.sublist(0, nbCards - 1);
+    cards.removeWhere((card) => cards.indexOf(card) <= nbCards);
+    return hand;
+  }
+
+  void removeCard(String rank, String suit) {
+    cards.removeWhere((card) => card.rank == rank && card.suit == suit);
   }
 }
 
@@ -54,6 +65,6 @@ class Card {
   Card(this.rank, this.suit);
 
   toString() {
-    return '[$rank of $suit]';
+    return '($rank of $suit)';
   }
 }
