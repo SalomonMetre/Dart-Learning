@@ -67,4 +67,8 @@ class Card {
   toString() {
     return '($rank of $suit)';
   }
+
+  String get getSuit => suit;
+  String get getRank => rank;
+  
 }
