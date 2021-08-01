@@ -51,7 +51,7 @@ class Deck {
 
   List deal(int nbCards) {
     var hand = cards.sublist(0, nbCards - 1);
-    cards.removeWhere((card) => cards.indexOf(card) <= nbCards);
+    cards.removeWhere((card) => cards.indexOf(card) < nbCards);
     return hand;
   }
 
