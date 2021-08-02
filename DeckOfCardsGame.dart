@@ -37,6 +37,10 @@ class Deck {
     }
   }
 
+  void clearDeck() {
+    cards = [];
+  }
+
   toString() {
     return cards.toString();
   }
@@ -70,5 +74,4 @@ class Card {
 
   String get getSuit => suit;
   String get getRank => rank;
-  
 }
