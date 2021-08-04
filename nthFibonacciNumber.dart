@@ -8,7 +8,7 @@ fibonacciNumber(int n) {
   return result.toInt();
 }
 
-main(List<String> args) {
+main() {
   print('Enter the rank of the Fibonacci number you want : ');
   int rank = int.parse(stdin.readLineSync().toString());
   print('The ${rank}th fibonacciNumber(rank) is : ${fibonacciNumber(rank)}');
