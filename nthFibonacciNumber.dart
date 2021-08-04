@@ -1,5 +1,6 @@
-import 'dart:io';
 ///Let us find the nth Fibonacci number using the Binet's formula
+
+import 'dart:io';
 import 'dart:math';
 
 final phi = (1 + sqrt(5)) / 2;
