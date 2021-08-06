@@ -10,6 +10,6 @@ isPrime(int n) {
 
 main(List<String> args) {
   print('Enter your number : ');
-  int n = int.parse(stdin.readLineSync().toString());
+  var n = int.parse(stdin.readLineSync().toString());
   isPrime(n) ? print('$n is prime ! ') : print('$n is not prime !');
 }
