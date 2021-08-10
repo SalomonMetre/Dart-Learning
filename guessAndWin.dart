@@ -2,11 +2,11 @@ import 'dart:io';
 import 'dart:math';
 
 class GuessHelper {
-  int? generatedNumber, userGuess, nbTrials;
+  int? generatedNumber, userGuess;
+  late int nbTrials;
   Random? myGenerator;
 
   GuessHelper() {
-    nbTrials = 0;
     myGenerator = Random();
     generateNumber();
   }
