@@ -45,8 +45,15 @@ void main() {
   //This produces a new list to which the anynonymous function has been applied
   print(mySiblings.map((e) => e += ' Metre'));
 
+  //shuffling the list
+  mySiblings.shuffle();
+
   //Using a 'tear-off' style to print every element of the list
   mySiblings.forEach(printElement);
 
-  
+  //sorting the list
+  mySiblings.sort();
+
+  //clearing the list
+  mySiblings.clear();
 }
