@@ -1,3 +1,5 @@
+import 'someCode.dart';
+
 ///What can we do with lists in Dart?
 ///We try to explore a few important methods that apply to lists in Dart using a list containing names of my siblings haha
 
@@ -44,5 +46,7 @@ void main() {
   print(mySiblings.map((e) => e += ' Metre'));
 
   //Using a 'tear-off' style to print every element of the list
+  mySiblings.forEach(printElement);
+
   
 }
