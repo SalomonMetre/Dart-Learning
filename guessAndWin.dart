@@ -24,7 +24,7 @@ class GuessHelper {
       print('Oh, so unlucky ! Please try again !');
       print('Number of trials : ${++nbTrials}');
     } while (userGuess != generatedNumber);
-    print(' ** CONGRATULATIONS ** ');
+    print(' CONGRATULATIONS! ');
   }
 }
 
