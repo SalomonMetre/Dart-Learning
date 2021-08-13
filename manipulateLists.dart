@@ -1,5 +1,3 @@
-import 'someCode.dart';
-
 ///What can we do with lists in Dart?
 ///We try to explore a few important methods that apply to lists in Dart using a list containing names of my siblings haha
 
