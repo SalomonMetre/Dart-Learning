@@ -37,5 +37,12 @@ void main() {
   //Reversing the list
   print(mySiblings.reversed);
 
+  //Checking whether Patrick is in our list
+  print(mySiblings.contains('Patrick'));
+
+  //This produces a new list to which the anynonymous function has been applied
+  print(mySiblings.map((e) => e += ' Metre'));
+
+  //Using a 'tear-off' style to print every element of the list
   
 }
