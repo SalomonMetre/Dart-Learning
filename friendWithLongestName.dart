@@ -11,6 +11,6 @@ main(List<String> args) {
     if (userCanContinue.toLowerCase() == 'no') canEnterFriendName = false;
   }
   friendNames.sort((a, b) => a.length.compareTo(b.length));
-  print('Your friends\' names from the longest the shortest : ');
+  print('Your friends\' names from the longest to the shortest : ');
   print(friendNames);
 }
